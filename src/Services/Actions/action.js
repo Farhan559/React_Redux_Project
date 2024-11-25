@@ -1,4 +1,4 @@
-import {Add_To_Cart} from '../Reducers/constant';
+import {Add_To_Cart} from '../constant';
 
 export const addToCart = (itemData)=>{
     return{

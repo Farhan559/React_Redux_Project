@@ -3,7 +3,8 @@ import {Button} from 'react-bootstrap';
 import { FaCartPlus } from "react-icons/fa";
 
 
-const Home = () => {
+const Home = (props) => {
+  console.log('Home',props)
   return (
     <>
      <FaCartPlus className='add-to-cart'/>
@@ -18,7 +19,7 @@ const Home = () => {
         </div>
         <div className="btn-container item">
           <br />
-          <Button variant="success">Add to Cart</Button>
+          <Button variant="success" onClick={()=>props.addToCardHandler({product:'shoes',price:'100$'})}>Add to Cart</Button>
         </div>
       </div>
     </>
